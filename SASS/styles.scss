@@ -1,7 +1,5 @@
 @import "utils/variables";
-@import
-@import
-@import
-@import
-@import
-@import
+@import "utils/mixins";
+@import "Layout/BEM";
+@import "Base/base";
+@import "Composants/boutons";
