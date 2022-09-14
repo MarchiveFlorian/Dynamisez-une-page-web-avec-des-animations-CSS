@@ -7,9 +7,14 @@ span {
 /* Policy */
 /* Header */
 /* Footer */
-/* box sizes */
+/* Box sizes */
 body {
   width: 425px;
+}
+
+/* Policy */
+* {
+  font-family: "Roboto", sans-serif;
 }
 
 /* buttons */
@@ -25,8 +30,13 @@ body {
 }
 
 /* Titles */
-h1, h2, h3 {
+h1 {
   font-family: "Shrikhand", cursive;
+}
+
+/* Form */
+form {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
