@@ -1,0 +1,12 @@
+@mixin cards-img-size{
+    width: auto;
+    height: 40%; 
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}

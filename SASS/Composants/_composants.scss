@@ -1,4 +1,3 @@
-/* buttons */
 
 .button_color_secondary{
     display: inline-block;
@@ -8,19 +7,45 @@
     padding: 11px 10px;
     font-size: 18px;
     cursor: pointer;
-    font-family: $policy_text;
 }
 
-
-/* Titles */
+span{
+    font-weight: $gras;
+}
 
 h1{
     font-family: $policy_logo_title;
 }
 
-
-/* Form */
+a{
+    text-decoration: none;
+    @include flex-column;
+	color: black;
+}
 
 form{
     width: 100%;
 }
+
+
+
+#logo_Ohmyfood{
+    width: $logo-size;
+    background-color: $color-white;
+    margin: 5% 30% 5% 10%;
+
+}
+
+
+.restaurants_card{
+    background-color: $color-white;
+
+        &_text{
+            display: flex;
+        }
+        &_img{
+            @include cards-img-size
+        }
+}
+
+

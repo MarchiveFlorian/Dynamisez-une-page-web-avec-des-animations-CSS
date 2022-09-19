@@ -1,11 +1,10 @@
-/* Box sizes */
 
 body{
-    width: 425px;
+    margin: 0 auto;
+    max-width: $width-site;
 }
-
-/* Policy */
 
 *{
     font-family: $policy_text;
 }
+
