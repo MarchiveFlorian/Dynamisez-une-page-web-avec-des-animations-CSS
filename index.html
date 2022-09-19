@@ -20,9 +20,8 @@
 
     <section id="Explore_section">
         <form method="post" action="search.php" id="search">
+            <input type="search" name="client_search" id="search_input" placeholder="Paris, Belleville" maxlength="30" />
             <i class="fas fa-map-marker-alt"></i>
-            <input type="search" name="client_search" id="client_search" placeholder="Paris, Belleville"
-                maxlength="30" />
         </form>
 
         <h2 id="ancre_main">Réserver le menu qui vous convient</h2>
@@ -32,9 +31,11 @@
 
     <section id="Fonctionnement">
         <h2>Fonctionnement</h2>
-        <button type="submit" id="Resto_select"><i class="fas fa-mobile-screen-button"></i>Choisissez un restaurant</button>
-        <button type="submit" id="menu_select"><i class="fas fa-ellipsis-vertical"></i><i class="fas fa-bars"></i>Composez votre menu</button>
-        <button type="submit" id="degustation"><i class="fas fa-store"></i>Dégustez au restaurant</button>
+        <div id="Fonctionnement_bloc">
+        <button type="submit" id="Resto_select"><i class="fas fa-mobile-screen-button"></i><span>Choisissez un restaurant</span></button>
+        <button type="submit" id="menu_select"><i class="fas fa-ellipsis-vertical"></i><i class="fas fa-bars"></i><span>Composez votre menu</span></button>
+        <button type="submit" id="degustation"><i class="fas fa-store"></i><span>Dégustez au restaurant</span></button>
+        </div>
     </section>
 
     <section id="Restaurants">
