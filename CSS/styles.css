@@ -132,25 +132,43 @@ footer div {
   color: black;
   background-color: #f6f6f6;
   width: 90%;
-  padding: 25px 30px;
+  padding: 20px 30px;
   border-radius: 20px;
   border: none;
+  font-size: 1em;
   cursor: pointer;
   margin-bottom: 5%;
   box-shadow: 0px 10px 21px -16px rgba(0, 0, 0, 0.57);
 }
+#Fonctionnement button i {
+  color: grey;
+  margin-right: 7%;
+}
 #Fonctionnement button:hover {
   background-color: #f5edff;
 }
-#Fonctionnement button:hover > i {
+#Fonctionnement button:hover i {
   color: #9356DC;
 }
-#Fonctionnement i {
-  margin: 0% 8% 0% -25%;
+#Fonctionnement p {
+  color: #fff;
+  border-radius: 50%;
+  background-color: #9356DC;
+  width: 5%;
+  padding: 4px 5px;
+  font-size: 0.9em;
+  margin: 0% 7% 0% -12%;
 }
 
-.fa-bars {
-  margin-left: -50%;
+.Fonctionnement_bloc-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 3% 0% 0% 0%;
+}
+.Fonctionnement_bloc-text div {
+  display: flex;
+  margin-right: 7%;
 }
 
 body {
