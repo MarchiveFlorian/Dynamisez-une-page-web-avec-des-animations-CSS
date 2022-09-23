@@ -55,6 +55,9 @@ header{
       margin: 3% 0% 3% 0%;
       font-size: 1em;
      }
+     a:hover{
+       color: $color-primary;
+     }
      div{
       margin: 0% 5% 2% 5%;
      }
@@ -65,6 +68,10 @@ header{
  flex-direction: row;
  justify-content: space-around;
  align-items: center;
+
+   &:hover{
+      color: $color-primary;
+   }
 }
 
 #footer_icon1{
@@ -80,10 +87,10 @@ header{
  #Explore_section{
    @include Major-blocs ;
    background-color: $color-box-background;
-   height: 300px;
+   height: 340px;
 
    h2{
-      margin-bottom: -1%;
+      margin: 9% 0% 0% 0%;
    }
    p{
       margin-bottom: 7%;
@@ -117,6 +124,21 @@ header{
    }
    i{
       margin: 0% -8% 0% 30%;
+   }
+}
+
+.button_color_secondary{
+   display: inline-block;
+   background: linear-gradient($color-secondary, $color-primary);
+   color: $color-white;
+   border: none;
+   border-radius: 26px;
+   padding: 17px 18px;
+   font-size: 15px;
+   cursor: pointer;
+   box-shadow: 0px 10px 21px -16px rgba(0,0,0,0.57);
+   &:hover{
+       background: linear-gradient($color-primary, $color-secondary); ;
    }
 }
 

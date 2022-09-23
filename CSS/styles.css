@@ -53,6 +53,9 @@ footer a {
   margin: 3% 0% 3% 0%;
   font-size: 1em;
 }
+footer a:hover {
+  color: #9356DC;
+}
 footer div {
   margin: 0% 5% 2% 5%;
 }
@@ -62,6 +65,9 @@ footer div {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+.footer_a:hover {
+  color: #9356DC;
 }
 
 #footer_icon1 {
@@ -78,10 +84,10 @@ footer div {
   align-items: center;
   width: 100%;
   background-color: #f6f6f6;
-  height: 300px;
+  height: 340px;
 }
 #Explore_section h2 {
-  margin-bottom: -1%;
+  margin: 9% 0% 0% 0%;
 }
 #Explore_section p {
   margin-bottom: 7%;
@@ -114,6 +120,21 @@ footer div {
 }
 #Explore_section form i {
   margin: 0% -8% 0% 30%;
+}
+
+.button_color_secondary {
+  display: inline-block;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: #fff;
+  border: none;
+  border-radius: 26px;
+  padding: 17px 18px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0px 10px 21px -16px rgba(0, 0, 0, 0.57);
+}
+.button_color_secondary:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
 }
 
 #Fonctionnement {
@@ -180,21 +201,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.button_color_secondary {
-  display: inline-block;
-  background: linear-gradient(#FF79DA, #9356DC);
-  color: #fff;
-  border: none;
-  border-radius: 26px;
-  padding: 13px 18px;
-  font-size: 15px;
-  cursor: pointer;
-  box-shadow: 0px 10px 21px -16px rgba(0, 0, 0, 0.57);
-}
-.button_color_secondary:hover {
-  background: linear-gradient(#9356DC, #FF79DA);
-}
-
 span {
   font-weight: 700;
 }
@@ -214,7 +220,7 @@ a {
   width: 40%;
   height: auto;
   background-color: #fff;
-  margin: 5% 30% 5% 10%;
+  margin: 5% 30% 3% 10%;
 }
 
 /*# sourceMappingURL=styles.css.map */
