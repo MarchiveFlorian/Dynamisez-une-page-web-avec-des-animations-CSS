@@ -1,39 +1,4 @@
 
-#restaurants{
-    width: 100%;
-    height: 1200px;
-    background-color: $color-box-background;
-      h2{
-         margin: 5% 0% 3% 2%;
-       }
-      div{
-         background-color: $color-box-background;
-      }
-      
- }
-
-
- .restaurants_card{
-   background-color: $color-white;
-
-       &_text{
-           display: flex;
-       }
-       &_img{
-           width: auto;
-           height: 200px; 
-           object-fit: cover;
-           border-top-left-radius: 20px;
-           border-top-right-radius: 20px;
-         }
-}
-
- #index_restaurant_bloc{
-   @include flex-column;
-    justify-content: space-evenly;
-    align-content: space-around;
- }
-
 header{
    display: flex;
    flex-direction: row-reverse;
@@ -190,4 +155,72 @@ header{
       display: flex;
       margin-right: 7%;
    }
+}
+
+#restaurants{
+   width: 100%;
+   height: 1200px;
+   margin-top: 10%;
+   background-color: $color-box-background;
+     h2{
+        padding: 12% 0% 0% 5%;
+      }
+     &_bloc{
+        @include flex-column;
+        background-color: $color-box-background;
+        width: 90%;
+        margin: auto;
+     }
+     &_bloc-new{
+      width: 100%;
+     }
+  }
+
+.restaurants_card{
+   position: relative;
+  background-color: $color-white;
+  border-radius: 20px;
+  height: 240px; 
+  margin-bottom: 5%;
+  box-shadow: 0px 10px 21px -16px rgba(0,0,0,0.57);
+  ul{
+      list-style: none;
+      margin: 5% 0% 0% -7%;
+   }
+   li{
+      font-size: 1.1em;
+      margin: 0% 0% 3% 0%;
+   }
+   &:hover{
+      background-color: $color-button-hover;
+   }
+  &-text{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     i{
+      margin-right: 7%;
+      color: $color-primary;
+     }
+  }
+  &-img{
+     width: auto;
+     height: 160px; 
+     object-fit: cover;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+  }
+  &-new{
+   width: 21%;
+   position: absolute;
+   right: 12px;
+   top: 12px;
+   padding: 6px 0;
+   border-radius: 2px;
+   background-color: #99E2D0;
+   text-align: center;
+   font-size: 0.9rem;
+   font-weight: 600;
+   color: #278870;
+  }
 }
