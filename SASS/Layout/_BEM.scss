@@ -224,3 +224,68 @@ header{
    color: #278870;
   }
 }
+
+.Page_resto_topbloc{
+   width: 100%;
+   height: 500px;
+   &-img{
+      width: 100%;
+      height: 300px; 
+      object-fit: cover;
+   }
+}
+
+.Page_resto_menu{
+   width: 100%;
+   height: 1400px;
+   margin: -55% 0% 0% 0%; 
+   background-color: $color-box-background;
+
+   &_titre{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+      margin: $margin-main-box;
+      i{
+         margin-right: 5%;
+      }
+   }
+
+   &_3items{
+      @include flex-column;
+      margin: $margin-main-box;
+      h3:after{
+         content: "";
+         display: block;
+         margin: 0% 0% 0% 0.5%;
+         width: 12%;
+         padding-top: 5px;
+         border-bottom: $color-resto-page 3px solid;
+      }
+   }
+
+   &_card{
+      background-color: $color-white;
+      border-radius: 20px;
+      @include flex-column;
+      padding: 0 7% 0 3%;
+      margin-bottom: 4%;
+
+      div{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         margin-top: -8%;
+      }
+
+      i{
+         margin-right: 3%;
+      }
+
+      &-titre{
+         font-size: 1.1em;
+      }
+   }
+
+}

@@ -8,6 +8,10 @@ h1{
     font-family: $policy_logo_title;
 }
 
+h3{
+    font-weight: 500;
+}
+
 a{
     text-decoration: none;
     @include flex-column;
@@ -21,7 +25,4 @@ a{
     margin: 5% 30% 3% 10%;
 }
 
-#backmenu{
-    display: none;
-}
 

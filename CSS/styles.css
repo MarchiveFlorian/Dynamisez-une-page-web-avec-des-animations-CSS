@@ -228,6 +228,66 @@ footer div {
   color: #278870;
 }
 
+.Page_resto_topbloc {
+  width: 100%;
+  height: 500px;
+}
+.Page_resto_topbloc-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.Page_resto_menu {
+  width: 100%;
+  height: 1400px;
+  margin: -55% 0% 0% 0%;
+  background-color: #f6f6f6;
+}
+.Page_resto_menu_titre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0px 5%;
+}
+.Page_resto_menu_titre i {
+  margin-right: 5%;
+}
+.Page_resto_menu_3items {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 5%;
+}
+.Page_resto_menu_3items h3:after {
+  content: "";
+  display: block;
+  margin: 0% 0% 0% 0.5%;
+  width: 12%;
+  padding-top: 5px;
+  border-bottom: #99e2d0 3px solid;
+}
+.Page_resto_menu_card {
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 7% 0 3%;
+  margin-bottom: 4%;
+}
+.Page_resto_menu_card div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -8%;
+}
+.Page_resto_menu_card i {
+  margin-right: 3%;
+}
+.Page_resto_menu_card-titre {
+  font-size: 1.1em;
+}
+
 body {
   margin: 0 auto;
   max-width: 425px;
@@ -245,6 +305,10 @@ h1 {
   font-family: "Shrikhand", cursive;
 }
 
+h3 {
+  font-weight: 500;
+}
+
 a {
   text-decoration: none;
   display: flex;
@@ -257,10 +321,6 @@ a {
   height: auto;
   background-color: #fff;
   margin: 5% 30% 3% 10%;
-}
-
-#backmenu {
-  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
