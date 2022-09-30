@@ -25,4 +25,24 @@ a{
     margin: 5% 30% 3% 10%;
 }
 
+#button_box{
+    background-color: $color-box-background;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20%;
+}
 
+#resto_button{
+    display: inline-block;
+    background: linear-gradient($color-secondary, $color-primary);
+    color: $color-white;
+    border: none;
+    border-radius: 26px;
+    padding: 17px 60px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0px 10px 21px -16px rgba(0,0,0,0.57);
+    &:hover{
+        background: linear-gradient($color-primary, $color-secondary); ;
+    }
+}

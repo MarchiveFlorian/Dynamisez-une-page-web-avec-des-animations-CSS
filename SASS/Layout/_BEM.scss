@@ -237,24 +237,29 @@ header{
 
 .Page_resto_menu{
    width: 100%;
-   height: 1400px;
-   margin: -55% 0% 0% 0%; 
+   height: 1050px;
+   margin: -64% 0% 0% 0%; 
    background-color: $color-box-background;
 
    &_titre{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-content: center;
+      align-items: center;
       margin: $margin-main-box;
+      font-size: 1.1em;
       i{
          margin-right: 5%;
+         color: $color-primary;
       }
    }
 
    &_3items{
       @include flex-column;
       margin: $margin-main-box;
+      h3{
+         font-size: 1em;
+      }
       h3:after{
          content: "";
          display: block;
@@ -269,14 +274,16 @@ header{
       background-color: $color-white;
       border-radius: 20px;
       @include flex-column;
-      padding: 0 7% 0 3%;
+      padding: 0% 7% 0% 3%;
       margin-bottom: 4%;
+      box-shadow: 0px 10px 21px -16px rgba(0,0,0,0.57);
 
       div{
          display: flex;
          flex-direction: row;
          justify-content: space-between;
          margin-top: -8%;
+         margin-bottom: -1%;
       }
 
       i{
@@ -285,6 +292,7 @@ header{
 
       &-titre{
          font-size: 1.1em;
+         margin-top: 3%;
       }
    }
 
