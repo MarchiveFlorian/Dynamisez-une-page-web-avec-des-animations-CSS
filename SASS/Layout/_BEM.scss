@@ -3,7 +3,6 @@ header{
    display: flex;
    flex-direction: row-reverse;
    align-items: center;
-
 }
 
  footer{
@@ -24,7 +23,7 @@ header{
        color: $color-primary;
      }
      div{
-      margin: 0% 5% 2% 5%;
+      margin: 0% 5% 5% 5%;
      }
  }
 
@@ -73,6 +72,7 @@ header{
    flex-direction: row-reverse;
    align-items: center;
    background-color: #eaeaea;
+   box-shadow: inset 0px 2px 0px #b4b4b4;
 
    input{
        width: 100%;
@@ -83,6 +83,7 @@ header{
        font-weight: 700;
        font-size: 1em;
        margin: 0;
+       box-shadow: inset 0px 2px 0px #b4b4b4;
    }
    input:focus{
       outline: none;
@@ -200,7 +201,7 @@ header{
      justify-content: space-between;
      i{
       margin-right: 7%;
-      color: $color-primary;
+      color: black;
      }
   }
   &-img{
@@ -240,6 +241,9 @@ header{
    height: 1050px;
    margin: -64% 0% 0% 0%; 
    background-color: $color-box-background;
+   border-top-left-radius: 40px;
+   border-top-right-radius: 40px;
+   position: relative;
 
    &_titre{
       display: flex;
@@ -248,9 +252,10 @@ header{
       align-items: center;
       margin: $margin-main-box;
       font-size: 1.1em;
+      font-weight: 300;
       i{
          margin-right: 5%;
-         color: $color-primary;
+         color: black;
       }
    }
 

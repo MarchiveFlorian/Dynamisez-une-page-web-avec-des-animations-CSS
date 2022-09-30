@@ -22,7 +22,7 @@ a{
     width: 40%;
     height: auto;
     background-color: $color-white;
-    margin: 5% 30% 3% 10%;
+    margin: 5% 30% 3% 20%;
 }
 
 #button_box{
@@ -31,6 +31,14 @@ a{
     justify-content: center;
     padding-bottom: 20%;
 }
+
+#button_box2{
+    background-color: $color-box-background;
+    display: flex;
+    justify-content: center;
+    padding: 20% 0 16% 0;
+}
+
 
 #resto_button{
     display: inline-block;

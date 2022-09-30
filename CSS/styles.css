@@ -24,7 +24,7 @@ footer a:hover {
   color: #9356DC;
 }
 footer div {
-  margin: 0% 5% 2% 5%;
+  margin: 0% 5% 5% 5%;
 }
 
 .footer_a {
@@ -71,6 +71,7 @@ footer div {
   flex-direction: row-reverse;
   align-items: center;
   background-color: #eaeaea;
+  box-shadow: inset 0px 2px 0px #b4b4b4;
 }
 #Explore_section form input {
   width: 100%;
@@ -81,6 +82,7 @@ footer div {
   font-weight: 700;
   font-size: 1em;
   margin: 0;
+  box-shadow: inset 0px 2px 0px #b4b4b4;
 }
 #Explore_section form input:focus {
   outline: none;
@@ -205,7 +207,7 @@ footer div {
 }
 .restaurants_card-text i {
   margin-right: 7%;
-  color: #9356DC;
+  color: black;
 }
 .restaurants_card-img {
   width: auto;
@@ -243,6 +245,9 @@ footer div {
   height: 1050px;
   margin: -64% 0% 0% 0%;
   background-color: #f6f6f6;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  position: relative;
 }
 .Page_resto_menu_titre {
   display: flex;
@@ -251,10 +256,11 @@ footer div {
   align-items: center;
   margin: 0px 5%;
   font-size: 1.1em;
+  font-weight: 300;
 }
 .Page_resto_menu_titre i {
   margin-right: 5%;
-  color: #9356DC;
+  color: black;
 }
 .Page_resto_menu_3items {
   display: flex;
@@ -328,7 +334,7 @@ a {
   width: 40%;
   height: auto;
   background-color: #fff;
-  margin: 5% 30% 3% 10%;
+  margin: 5% 30% 3% 20%;
 }
 
 #button_box {
@@ -336,6 +342,13 @@ a {
   display: flex;
   justify-content: center;
   padding-bottom: 20%;
+}
+
+#button_box2 {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  padding: 20% 0 16% 0;
 }
 
 #resto_button {
