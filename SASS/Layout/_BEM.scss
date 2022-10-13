@@ -259,7 +259,7 @@ header{
   box-shadow: 0px 10px 21px -16px rgba(0,0,0,0.57);
   ul{
       list-style: none;
-      margin: 5% 0% 0% -7%;
+      margin: 10% 0% 0% -15%;
    }
    li{
       font-size: 1.1em;
@@ -298,27 +298,39 @@ header{
 
 .coeur{
    position: absolute;
-   left: 330px;
+   font-size: 1.5rem;
+   left: 85%;
+   bottom: 35%;
    color: black;
    cursor: grab;
-   visibility: visible;
-}
-
-.coeur:hover{
-   visibility: hidden;
 }
 
 .coeur-plein{
-   color: $color-primary;
+   color: transparent;
+   font-size: 1.5rem;
+   background-image: linear-gradient(to top, $color-secondary, $color-primary);
+   background-clip: text;
+   -webkit-background-clip: text;
    position: absolute;
-   left: 330px;
-   visibility: hidden;
+   left: 85%;
+   bottom: 35%;
+   opacity: 0;
 }
 
 .coeur-plein:hover{
-   visibility: visible;
+   opacity: 1;
+   animation: coeurFill 1s;
 }
 
+@keyframes coeurFill {
+   from {
+      background: white;
+   }
+   to {
+      font-weight: 900;
+      background-image: linear-gradient(to top, $color-secondary, $color-primary);
+   }
+}
 
 .Page_resto_topbloc{
    width: 100%;
@@ -327,6 +339,42 @@ header{
       width: 100%;
       height: 300px; 
       object-fit: cover;
+   }
+}
+
+.coeur-resto{
+   position: absolute;
+   left: 85%;
+   top: 2.8%;
+   font-size: 1.5rem;
+   color: black;
+   cursor: grab;
+}
+
+.coeur-plein-resto{
+   position: absolute;
+   left: 85%;
+   top: 2.8%;
+   color: transparent;
+   font-size: 1.5rem;
+   background-image: linear-gradient(to top, $color-secondary, $color-primary);
+   background-clip: text;
+   -webkit-background-clip: text;
+   opacity: 0;
+}
+
+.coeur-plein-resto:hover{
+   opacity: 1;
+   animation: coeurFill-resto 1s;
+}
+
+@keyframes coeurFill-resto {
+   from {
+      background: white;
+   }
+   to {
+      font-weight: 900;
+      background-image: linear-gradient(to top, $color-secondary, $color-primary);
    }
 }
 
@@ -347,10 +395,6 @@ header{
       margin: $margin-main-box;
       font-size: 1.1em;
       font-weight: 300;
-      i{
-         margin-right: 5%;
-         color: black;
-      }
    }
 
    &_3items{
@@ -377,23 +421,19 @@ header{
       margin-bottom: 4%;
       box-shadow: 0px 10px 21px -16px rgba(0,0,0,0.57);
 
-      div{
-         display: flex;
-         flex-direction: row;
-         justify-content: space-between;
-         margin-top: -8%;
-         margin-bottom: -1%;
-      }
-
-      i{
-         margin-right: 3%;
-      }
-
       &-titre{
          font-size: 1.1em;
          margin-top: 3%;
       }
    }
+}
+
+.detail-price{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: -8%;
+      margin-bottom: -1%;
 }
 
 .opacity-delay{
