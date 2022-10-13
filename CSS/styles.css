@@ -393,6 +393,8 @@ footer div {
   margin: 0px 5%;
   font-size: 1.1em;
   font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .Page_resto_menu_3items {
   display: flex;
@@ -411,6 +413,8 @@ footer div {
   border-bottom: #99e2d0 3px solid;
 }
 .Page_resto_menu_card {
+  position: relative;
+  overflow: hidden;
   background-color: #fff;
   border-radius: 20px;
   display: flex;
@@ -424,12 +428,63 @@ footer div {
   margin-top: 3%;
 }
 
+.rognure {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .detail-price {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: -8%;
   margin-bottom: -1%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.detail {
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 1%;
+}
+
+.validation_box {
+  position: absolute;
+  background: #99e2d0;
+  border-radius: 0 15px 15px 0;
+  right: -75px;
+  padding: 0 20px;
+  height: 100%;
+  transition: all 0.5s;
+}
+.validation_box i {
+  position: relative;
+  top: 30%;
+  font-size: 25px;
+  color: white;
+}
+
+.Page_resto_menu_card:hover .validation_box {
+  right: 0px;
+}
+
+.Page_resto_menu_card:hover i {
+  animation: rotate 0.5s ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(-270deg);
+    transform: rotate(-270deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+.Page_resto_menu_card:hover .detail-price {
+  padding-right: 15%;
 }
 
 .opacity-delay {

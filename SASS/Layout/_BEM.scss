@@ -395,6 +395,8 @@ header{
       margin: $margin-main-box;
       font-size: 1.1em;
       font-weight: 300;
+      white-space: nowrap;
+      overflow: hidden;
    }
 
    &_3items{
@@ -414,6 +416,8 @@ header{
    }
 
    &_card{
+      position: relative;
+      overflow: hidden;
       background-color: $color-white;
       border-radius: 20px;
       @include flex-column;
@@ -428,12 +432,65 @@ header{
    }
 }
 
+.rognure{
+   text-overflow: ellipsis;
+   overflow: hidden;
+}
+
 .detail-price{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-top: -8%;
-      margin-bottom: -1%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: -8%;
+   margin-bottom: -1%;
+   white-space: nowrap;
+   overflow: hidden;
+}
+
+.detail{
+   white-space: nowrap;
+   overflow: hidden;
+   padding-right: 1%;
+}
+
+.validation_box{
+   position: absolute;
+   background: $color-resto-page;
+   border-radius: 0 15px 15px 0;
+   right: -75px;
+   padding: 0 20px;
+   height: 100%;
+   transition: all 0.5s;
+
+   i{
+      position: relative;
+      top: 30%;
+      font-size: 25px;
+      color: white;
+   }
+}
+
+.Page_resto_menu_card:hover .validation_box{
+   right: 0px;
+}
+
+.Page_resto_menu_card:hover i{
+   animation: rotate 0.5s ease-in-out;
+}
+
+@keyframes rotate{
+   0%{
+      -webkit-transform: rotate(-270deg);
+      transform: rotate(-270deg);
+   }
+   100%{
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+   }
+}
+
+.Page_resto_menu_card:hover .detail-price{
+   padding-right: 15%;
 }
 
 .opacity-delay{
