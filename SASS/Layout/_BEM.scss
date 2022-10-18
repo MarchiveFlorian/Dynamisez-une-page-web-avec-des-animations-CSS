@@ -126,10 +126,10 @@ header{
    height: auto;
 
    h2{
-      margin: 9% 0% 0% 0%;
+      margin: 40px 0% 0% 0%;
    }
    p{
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       color: grey;
    }
    h2 , p{
@@ -193,7 +193,7 @@ header{
 #Fonctionnement{
    color: black;
    h2{
-      margin: 10% 0% 7% 5%
+      margin: 50px 0% 30px 5%
    }
    &_bloc{
       @include Major-blocs ;
@@ -207,7 +207,7 @@ header{
          border: none;
          font-size: 1em;
          cursor: pointer;
-         margin-bottom: 5%;
+         margin-bottom: 20px;
          box-shadow: 0px 10px 21px -16px rgba(0,0,0,0.57);
       }
       button i{
@@ -243,11 +243,11 @@ header{
 #restaurants{
    width: 100%;
    height: auto;
-   margin-top: 10%;
+   margin-top: 50px;
    background-color: $color-box-background;
 
      h2{
-        padding: 12% 0% 0% 5%;
+        padding: 60px 0% 0% 5%;
       }
      &_bloc{
         @include flex-column;
@@ -266,7 +266,7 @@ header{
   background-color: $color-white;
   border-radius: 20px;
   height: 240px; 
-  margin-bottom: 5%;
+  margin-bottom: 20px;
   box-shadow: 0px 10px 21px -16px rgba(0,0,0,0.57);
   ul{
       list-style: none;
