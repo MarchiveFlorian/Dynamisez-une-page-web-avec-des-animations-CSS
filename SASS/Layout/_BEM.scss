@@ -199,26 +199,20 @@ header{
    &_bloc{
       @include Major-blocs ;
    }
-      button{
-         color: black;
-         background-color: $color-box-background;
-         width: 90%;
-         padding: 20px 30px;
-         border-radius: 20px;
-         border: none;
-         font-size: 1em;
-         cursor: pointer;
-         margin-bottom: 20px;
-         box-shadow: 0px 10px 21px -16px rgba(0,0,0,0.57);
-      }
-      button i{
-         color: grey;
-         margin-right: 7%;
-      }
-      button:hover{
-         background-color: $color-button-hover ;
-      }
-      button:hover i { color: $color-primary };
+
+}
+
+.button{
+      color: black;
+      background-color: $color-box-background;
+      width: 70%;
+      padding: 20px 30px;
+      border-radius: 20px;
+      border: none;
+      font-size: 1em;
+      cursor: pointer;
+      margin-bottom: 20px;
+      box-shadow: 0px 10px 21px -16px rgba(0,0,0,0.57);
       p{
          color: $color-white;
          border-radius: 50%;
@@ -227,7 +221,20 @@ header{
          padding: 4px 5px;
          font-size: 0.9em;
          margin: 0% 7% 0% -40px;
+         text-align: center;
       }
+      i{
+      color: grey;
+      margin-right: 7%;
+      }
+}
+
+.button:hover{
+   background-color: $color-button-hover ;
+}
+
+.button:hover i { 
+   color: $color-primary;
 }
 
 .Fonctionnement_bloc-text{
@@ -235,10 +242,6 @@ header{
    flex-direction: row;
    align-items: center;
    margin: 10px 0% 0% 0%;
-   div{
-      display: flex;
-      margin-right: 7%;
-   }
 }
 
 #restaurants{
@@ -271,11 +274,9 @@ header{
   box-shadow: 0px 10px 21px -16px rgba(0,0,0,0.57);
   ul{
       list-style: none;
-      margin: 10% 0% 0% -15%;
    }
    li{
       font-size: 1.1em;
-      margin: 0% 0% 3% 0%;
    }
    &:hover{
       background-color: $color-white;
