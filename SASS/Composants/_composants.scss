@@ -32,14 +32,14 @@ a{
     background-color: $color-box-background;
     display: flex;
     justify-content: center;
-    padding-bottom: 20%;
+    padding-bottom: 80px;
 }
 
 #button_box2{
     background-color: $color-box-background;
     display: flex;
     justify-content: center;
-    padding: 20% 0 16% 0;
+    padding: 100px 0 80px 0;
 }
 
 
@@ -53,6 +53,7 @@ a{
     font-size: 15px;
     cursor: pointer;
     box-shadow: 0px 10px 21px -16px rgba(0,0,0,0.57);
+    margin-top: 50px;
     &:hover{
         background: linear-gradient($color-primary, $color-secondary); ;
     }
