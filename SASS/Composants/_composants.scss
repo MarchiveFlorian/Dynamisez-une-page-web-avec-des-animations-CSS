@@ -20,9 +20,12 @@ a{
 
 #logo_Ohmyfood{
     width: 40%;
+    max-width: 400px;
     height: auto;
     background-color: $color-white;
-    margin: 5% 30% 3% 20%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 3%;
 }
 
 #button_box{
