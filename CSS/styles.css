@@ -71,6 +71,7 @@ header {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  position: relative;
 }
 
 footer {
@@ -585,11 +586,18 @@ a {
 #logo_Ohmyfood {
   width: 40%;
   max-width: 400px;
+  min-width: 169px;
   height: auto;
   background-color: #fff;
   margin: auto;
-  margin-top: 5%;
-  margin-bottom: 3%;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.retour {
+  position: absolute;
+  left: 25px;
+  top: 43px;
 }
 
 #button_box {
